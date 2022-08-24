@@ -15,6 +15,9 @@ app.listen(process.env.PORT || 3333);
 
 //ROTAS
 app.use('/summoner', summonerRouter);
+app.use('/', (req, res) => {
+  res.send("<h3>Bem vido a fiddle gg api</h3>")
+})
 
 module.exports = app;
 
