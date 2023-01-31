@@ -8,6 +8,7 @@ const cors = require("cors");
 const summonerRouter = require("./routes/summoner.routes");
 
 const app = express();
+app.use(express.static('public'))
 
 app.use(json());
 app.use(cors());
